@@ -1,0 +1,24 @@
+<div class="surrounding-div">
+  <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+  
+  <ng-container matColumnDef="id">
+    <th class="header" mat-header-cell *matHeaderCellDef> ID </th>
+    <td class="cells" mat-cell *matCellDef="let userDatum"> {{userDatum.id}} </td>
+  </ng-container>
+
+  <ng-container matColumnDef="name">
+    <mat-header-cell class="header" *matHeaderCellDef> Name </mat-header-cell>
+    <mat-cell class="cells" *matCellDef="let userDatum">
+      <button mat-raised-button color="primary" (click)="openDialog(userDatum.cards)">{{userDatum.name}}</button>
+    </mat-cell>
+  </ng-container>
+
+  <ng-container matColumnDef="date">
+    <th class="header" mat-header-cell *matHeaderCellDef> Date </th>
+    <td class="cells" mat-cell *matCellDef="let userDatum"> {{userDatum.date}} </td>
+  </ng-container>
+
+  <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+  <tr class="row" mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+</table>
+</div>

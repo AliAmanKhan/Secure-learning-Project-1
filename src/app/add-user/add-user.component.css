@@ -1,0 +1,44 @@
+/* .header{  
+    color: black;
+    background-color:wheat;
+} */
+mat-card{
+    width: 40vw;
+}
+.card-title{
+    background-color: blue;
+    color: white;
+    padding: 0 0 16px 16px;
+    margin: 0;
+}
+.card-content{
+    background-color: rgb(1, 1, 63);
+    color: white;
+    padding-top: 16px;
+}
+.card-actions{
+    background-color: rgb(1, 1, 83);
+    color: white;
+}
+.card-actions button{
+    background-color: white;
+    color: black;
+}
+.row{
+    display: flex;
+    flex-direction: row;
+}
+.keys{
+    padding: 10px;
+    background-color: rgb(19, 19, 89);
+    color: white;
+    height: 1.5rem;
+    width: 15rem;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    font-size: medium;
+}
+.keys:hover{
+    background-color: rgb(23, 23, 113);
+}
